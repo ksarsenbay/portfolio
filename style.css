@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+.max-width {
+	max-width: 1300px;
+	padding: 0 80px;
+	margin: auto;
+}
+.navbar {
+	width: 100%;
+	padding: 30px 0;
+	position: fixed;
+	font-family: 'Oswald', sans-serif;
+	transition: all 0.3s ease;
+}
+.navbar.sticky {
+	background: white;
+	padding: 15px 0;
+}
+.navbar .max-width {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.navbar .logo a{
+	color: black;
+	font-size: 33px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+.navbar .logo a:hover {
+    color: #fda96c;
+}
+.navbar .menu li{
+	list-style: none;
+	display: inline-block;
+}
+.navbar .menu li a {
+	color: black;
+	font-size: 28px;
+	font-weight: 500;
+	margin-left: 25px;
+	transition: color 0.3s ease;
+}
+.navbar .menu li a:hover {
+	color: #fda96c;
+}
+.menu-btn{
+	color: #737272;
+	font-size: 23px;
+	cursor: pointer;
+	display: none;
+}
+
+.home {
+    background-color: #627f8a;
+    height: 755px;
+}
+.home img {
+    width:602px;
+}
+.home h1 {
+    font-size: 59px;
+    width: 55%;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    margin-left: 655px;
+    margin-top: -600px;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 200px;
+    transform-style: preserve-3d;
+    width: 1100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+section .card {
+    border-width: 4px;
+    border-style: solid;
+    border-image: 
+      linear-gradient(
+        to top, 
+        aqua, 
+        orange
+      ) 1 100%;
+    position: relative;
+    width: 320px;
+    height: 320px;
+    margin: 20px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    box-shadow:  0px 0px 30px 8px rgba(20, 20, 20, .17);
+}
+section .card .box {
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 1s ease;
+}
+section .card:hover .box {
+    transform: rotateY(180deg);
+}
+section .card .box .imgBx {
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+}
+section .card .box .imgBx img {
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section .card .box .contentBx {
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+
+}
+section .card .box .contentBx div {
+    transform-style: preserve-3d;
+    padding: 20px;
+    background: linear-gradient(45deg, #fea46b, #578297);
+    transform: translateZ(100px);
+}
+section .card .box .contentBx div h2 {
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+section .card .box .contentBx div p {
+    color: white;
+    font-size: 16px;
+}
+.works {
+    background:#627f8a;
+}
+.works .zag {
+    font-size: 40px;
+    text-align: center;
+    color:white;
+}
+.works .images #pict1 {
+    width: 500px;
+    margin-top: 130px;
+}
+.works .images #pict2 {
+    position: absolute;
+    width: 320px;
+    margin-top: 260px;
+    margin-left: -20px;
+}
+.works .images #p1 {
+    color:white;
+    position: absolute;
+    margin-top: -660px;
+    margin-left: 510px;
+    font-size: 60px;
+}
+.works .images #p2 {
+    color:white;
+    position: absolute;
+    margin-top: -500px;
+    margin-left: 800px;
+    font-size: 60px;
+}
+.icons ul {
+    position: relative;
+    display: flex; 
+    margin-left: 600px;  
+    margin-top: 520px;
+    margin-bottom: 20px;
+}
+.icons ul li {
+    position: relative;
+    list-style: none;
+}
+.icons ul li a {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    margin: 0, 10px;
+    text-decoration: none;
+    font-size:30px;
+    border-radius: 50%;
+    color: #e2e2e2;
+    box-shadow: inset -1px -1px 2px rgba(0,0,0,0.2),
+                      2px 2px 5px rgba(0,0,0,0.2);
+    transition: 0.5s;
+}
+.icons ul li a .fa{
+    position: relative;
+    color:white;
+    z-index: 1;
+}
+.icons ul li a:hover {
+    color: #999;
+    transform: translateY(-20px);
+    box-shadow: inset -1px -1px 2px rgba(0,0,0,0.2),
+                      2px 24px 10px rgba(0,0,0,0.1);
+}
+.icons ul li a:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.1)
+}
+.icons ul li:nth-child(1) a:before {
+    background-color:black;
+}
+.icons ul li:nth-child(2) a:before {
+    background-color: black;
+}
+.icons ul li:nth-child(3) a:before {
+    background-color: black;
+}
+.icons ul li:nth-child(4) a:before {
+    background-color: black;
+}
+.contact .contactme {
+    width: 40%;
+    padding: 0px;
+    background-color: #fff;
+    margin-top: -550px;
+    margin-left: 740px;
+}
+.contact .contactme #h2 {
+    color: #172138;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    margin-left: -51px;
+}
+.contact .contactme .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: -275px;
+}
+.contact .contactme .inputBox input {
+    padding: 5px 0;
+    width: 100%;
+    font-size: 16px;
+    margin: 10px 0;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+.contact .contactme .inputBox textarea {
+    padding: 5px 0;
+    width: 100%;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    outline: none;
+    resize: none;
+}
+
+
+.contact .contactme .inputBox input[type = "submit"] {
+    width: 100px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    margin-left: 250px;
+}
+.contact .contactme form a {
+    position: absolute;
+    color: black;
+    margin-left: 480px;
+    margin-top: -65px;
+}
+.contact .contactme form #mailito{
+    margin-top: -35px;
+    margin-left: 428px;
+    position: absolute;
+}
+
+@media (max-width: 947px) {
+	.max-width {
+		padding: 0 50px;
+	}
+	.menu-btn{
+	color: #737272;
+	display: block;
+	z-index: 999;
+	}
+	.navbar .menu {
+		position: fixed;
+		height: 100vh;
+		width: 100%;
+		left: -100%;
+		top: 0;
+		background: white;
+		text-align: center;
+		padding-top: 150px;
+		transition: all 0.3s ease;
+	}
+	.navbar .menu.active {
+		left:0;
+	}
+	.navbar .menu li {
+		display: block;
+	}
+	.navbar .menu li a{
+		display: inline-block;
+		margin: 20px 0;
+		font-size: 25px;
+    }
+    .home {
+        height: 1155px;
+    }
+    .home h1 {
+        font-size: 42px;
+        width: 100%;
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    section {
+        display: grid;
+        margin-left: -300px;
+    }
+    .works .zag p{
+        padding-top: 90px;
+    }
+    .works .images #p1 {
+        color:black;
+        position: absolute;
+        margin-top: 0px;
+        margin-left: 0px;
+        font-size: 60px;
+    }
+    .works .images #pict2 {
+        margin-left: 80px;
+        margin-top: 190px;
+    }
+    .works .images #p2 {
+        color: black;
+        margin-top: 760px;
+        margin-left: 90px;
+        font-size: 40px;   
+    }
+    .contact .contactme {
+        margin-left: 200px;
+        margin-top: 900px;
+    }
+    .contact .contactme .inputBox {
+        margin-left: -60px;
+    }.contact .contactme .inputBox input[type = "submit"] {
+       margin-left:40px;
+    }
+    .contact .contactme form a {
+        display: none;
+        margin-left: 0;
+    }
+    .contact .contactme form #mailito{
+        display: none;
+        margin-left: 0;
+    }
+    .icons ul {
+        position: absolute;
+        margin-left: 70px;
+        margin-top: 1400px;
+    }
+}

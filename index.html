@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src = "wow.min.js"></script>
+    <script>
+        new WOW().init();
+        </script>
+</head>
+<body>
+    <nav class = "navbar">
+    	<div class = "max-width">
+    		<div class = "logo" onclick="window.location.reload()"><a href="#">Kuanysh Sarsenbay</a></div>
+    		<ul class = "menu">
+    			<li><a href="#home">Home</a></li>
+    			<li><a href="#aboutme">About me</a></li>
+    			<li><a href="#works">My Works</a></li>
+    			<li><a href="#contact">Contact me</a></li>
+    		</ul>
+    		<div class = "menu-btn">
+    			<i class="fas fa-bars"></i>
+    		</div>
+    	</div>
+    </nav>
+    <div class = "home" id = "home">
+    <img src="photo1.jpg" alt="">
+    <h1>Hello world! My name is Kuanysh and i am a Web-Designer and IOS Developer. Currently studying at Suleyman Demirel University and working at OzenMunaiGas</h1>
+    </div>
+    <section id = "aboutme">
+        <div class = "card wow animate__animated animate__fadeInLeft">
+            <div class = "box">
+                <div class = "imgBx">
+                    <img src="im1.png" alt="Swift">
+                </div>
+                <div class = "contentBx">
+                    <div>
+                        <h2>SWIFT</h2>
+                        <p>I know swift programming language very well!<br>For 70%<br>I can make any programs for IOS on middle level.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "card wow animate__animated animate__fadeInUp">
+            <div class = "box">
+                <div class = "imgBx">
+                    <img src="im2.jpg" alt="Swift">
+                </div>
+                <div class = "contentBx">
+                    <div>
+                        <h2>HTML, CSS, JAVASCRIPT</h2>
+                        <p>But, in first order i am a Web-Designer<br>I know almost everything in HTML and CSS. JavaScript for 65%.<br>Making web-sites in any level of difficulty.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "card wow animate__animated animate__fadeInRight">
+            <div class = "box">
+                <div class = "imgBx">
+                    <img src="img3.png" alt="Swift">
+                </div>
+                <div class = "contentBx">
+                    <div>
+                        <h2>JAVA</h2>
+                        <p>Also i know Java pretty good.<br>For 60%<br>I made a lot of programs in java at first course of university.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class = "works" id = "works">
+        <div class = "zag">
+            <p>Here you can check out projects that i created!</p>        
+        </div>
+        <div class = "images">
+            <img id = "pict1" src="work1.jpg" alt="">
+            <p id = "p1">Website and design for Mercedez-Benz</p>
+            <img id = "pict2" src="work2.png" alt="">
+            <p id = "p2">IOS app for healthcare</p>
+        </div>
+    </div>
+    <div class = "icons wow animate__animated animate__fadeInUp">
+        <ul>
+            <li><a href="https://vk.com/ksarsenbay"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.instagram.com/ksarsenbay/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+            <li><a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i>
+            </a></li>
+        </ul>
+    </div>
+    <div class = "contact" id = "contact">
+    <div class = "contactme wow animate__animated animate__fadeInUp">
+        <form>
+            <div id = "h2">Contact Me</div>
+            <div class="inputBox">
+                <input type = "text" placeholder="Name"name="Name" required="required">
+            </div>
+            <div class="inputBox">
+                <input type = "text" name="Email" placeholder="Email" required="required">
+            </div>
+            <div class="inputBox">
+                <textarea placeholder="Your message" required="required"></textarea>
+            </div>
+            <div class="inputBox">
+                <input type = "submit" name="" value="Send">
+            </div>
+            <a href="tel:+7 (778) 177 07 55">+7 (778) 177 07 55</a>
+            <a id = "mailito" href = "mailto: 190103397@stu.sdu.edu.kz">190103397@stu.sdu.edu.kz</a>
+        </form>
+    </div>
+    </div>
+    <script src ="general.js"></script>
+</body>
+</html>
