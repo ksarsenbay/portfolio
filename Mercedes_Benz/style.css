@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Yantramanav:wght@100&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+html {
+	scroll-behavior: smooth;
+}
+.max-width {
+	max-width: 1300px;
+	padding: 0 80px;
+	margin: auto;
+}
+/*navbar styling*/
+.navbar {
+    background-color: none;
+	width: 100%;
+	padding: 10px 0;
+    font-family: 'Raleway', sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky {
+	background: white;
+	padding: 15px 0;
+}
+.navbar .max-width {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.navbar .logo img{
+    width: 140px;
+    height: 100px;
+}
+.navbar .menu li{
+	list-style: none;
+	display: inline-block;
+}
+.navbar .menu li a {
+    color: grey;
+    opacity: 0.7;
+	font-size: 24px;
+	font-weight: 500;
+	margin-left: 25px;
+	transition: color 0.3s ease;
+}
+.navbar .menu li a:hover {
+    color: red;
+    opacity: 1;
+}
+.menu-btn{
+	color: white;
+	font-size: 23px;
+	cursor: pointer;
+	display: none;
+}
+.video video {
+    margin-top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.text1 {
+    font-family: 'Raleway',sans-serif;
+    font-size: 36px;
+    color:white;
+    background-color: black;
+    height: 970px;
+    margin-top: -4px;
+}
+.text1 h1 {
+    padding-top: 14px;
+}
+.text1 #img1 {
+    width: 380px;
+    margin-left: 70px;
+	margin-top: 14px;
+	object-fit: cover;
+	transition: transform 0.3s ease;
+}
+.text1 #tx1 {
+    max-width: 1000px;
+    margin-top: -395px;
+	margin-left: 480px;
+}
+.text1 #img2 {
+	width: 380px;
+	object-fit: cover;
+	margin-left: 70px;
+	margin-top: 180px;
+	transition: transform 0.3s ease;
+}
+.text1 #tx2 {
+    max-width: 1000px;
+    margin-top: -467px;
+	margin-left: 480px;
+}
+.text1 #img1:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.text1 #img2:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.the {
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	min-height: 100vh;
+	background: #fff;
+}
+.the .container {
+	position: relative;
+	max-width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-template-rows: minmax(100px, auto));
+	margin: 40px;
+	grid-auto-flow: dense;
+	grid-gap:10px;
+}
+.the .container .box {
+	padding:20px;
+	display: grid;
+	font-size: 22px;
+	place-items: center;
+	text-align: center;
+	transition: 0.5s;
+	cursor: pointer;
+}
+.the .container .box p {
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+}
+.the .container .box:hover {
+	background: #666;
+	color: white;
+}
+.the .container .box img {
+	position: relative;
+	width: 170px;
+	max-width: 170px;
+	margin-bottom: 10px;
+}
+.the2 {
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	min-height: 100vh;
+	background:black;
+	color: white;
+}
+.the2 .container2 {
+	position: relative;
+	max-width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-template-rows: minmax(100px, auto));
+	margin: 40px;
+	grid-auto-flow: dense;
+	grid-gap:10px;
+}
+.the2 .container2 .box2 {
+	padding:20px;
+	display: grid;
+	font-size: 22px;
+	place-items: center;
+	text-align: center;
+	transition: 0.5s;
+	cursor: pointer;
+}
+.the2 .container2 .box2 p {
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+}
+.the2 .container2 .box2:hover {
+	background:white;
+	color: black;
+}
+.the2 .container2 .box2 img {
+	position: relative;
+	width: 170px;
+	max-width: 170px;
+	margin-bottom: 10px;
+}
+
+#map {
+	width: 46%;
+	height: 500px;
+}
+.contact .contactme {
+    width: 45%;
+    background-color: #fff;
+    margin-top: -390px;
+    margin-left: 800px;
+}
+.contact .contactme #h2 {
+    color:black;
+    font-family: 'Raleway', sans-serif;
+	font-size: 40px;
+	margin-top: -55px;
+	margin-left: 70px;
+}
+.contact .contactme .inputBox {
+    position: relative;
+    width: 50%;
+    margin-top: 10px;
+}
+.contact .contactme .inputBox input {
+    padding: 5px 0;
+    width: 100%;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+.contact .contactme .inputBox textarea {
+    padding: 5px 0;
+    width: 100%;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    resize: none;
+}
+
+.contact .contactme .inputBox input[type = "submit"] {
+    width: 100px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+	font-family: 'Raleway', sans-serif;
+	margin-left: 130px;
+}
+.contact .contactme form a {
+    position: absolute;
+    color: black;
+    margin-left: 390px;
+	margin-top: 15px;
+	background-color: black;
+	color:white;
+	font-family: 'Raleway', sans-serif;
+}
+.contact .contactme form #mailito{
+    margin-top: 40px;
+    margin-left: 333px;
+    position: absolute;
+}
+
+
+
+@media (max-width: 947px) {
+	.max-width {
+		padding: 0 50px;
+	}
+	.menu-btn{
+	color: grey;
+	display: block;
+	position: fixed;
+	z-index: 999;
+	margin-left: 390px;
+	}
+	.navbar .menu {
+		position: fixed;
+		height: 100vh;
+		width: 100%;
+		left: -100%;
+		top: 0;
+		background: black;
+		text-align: center;
+		padding-top: 150px;
+		transition: all 0.3s ease;
+	}
+	.navbar .menu.active {
+		left:0;
+	}
+	.navbar .menu li {
+		display: block;
+	}
+	.navbar .menu li a{
+		display: inline-block;
+		margin: 20px 0;
+		font-size: 25px;
+	}
+	.video {
+		display: none;
+	}
+	.the .container {
+
+		grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+		grid-template-rows: minmax(auto, auto));
+
+	}
+	.the2 .container2 {
+
+		grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+		grid-template-rows: minmax(auto, auto));
+
+	}
+	.text1 {
+		font-family: 'Raleway',sans-serif;
+		font-size: 20px;
+		color:white;
+		background-color: black;
+		height: 1470px;
+		margin-top: -4px;
+	}
+	.text1 #img1 {
+		width: 320px;
+		margin-left: 70px;
+		margin-top: 49px;
+		object-fit: cover;
+		transition: transform 0.3s ease;
+	
+	}
+	.text1 #tx1 {
+		position: absolute;
+		max-width: 1000px;
+		margin-top: 40px;
+		margin-left: 0px;
+	}
+	.text1 #img2 {
+		width: 320px;
+		object-fit: cover;
+		margin-left: 70px;
+		margin-top: 250px;
+		transition: transform 0.3s ease;
+	}
+	.text1 #tx2 {
+		max-width: 1000px;
+		margin-top: 30px;
+		margin-left: 0px;
+	}
+	#map {
+		display: none;
+	}
+	.contact .contactme {
+		width: 100%;
+		background-color: #fff;
+		margin-top: 90px;
+		margin-left: 0px;
+	}
+	.contact .contactme #h2 {
+		color:black;
+		font-family: 'Raleway', sans-serif;
+		font-size: 40px;
+		margin-top: -55px;
+		margin-left: 140px;
+	}
+	.contact .contactme .inputBox {
+		position: relative;
+		width: 100%;
+		margin-top: 10px;
+	}
+	.contact .contactme .inputBox input {
+		padding: 5px 0;
+		width: 100%;
+		font-size: 16px;
+		margin: 10px 0;
+		border: none;
+		border-bottom: 2px solid black;
+		outline: none;
+	}
+	.contact .contactme .inputBox textarea {
+		padding: 5px 0;
+		width: 100%;
+		font-size: 16px;
+		margin: 10px 0;
+		border: none;
+		border-bottom: 2px solid black;
+		outline: none;
+		resize: none;
+	}
+	
+	.contact .contactme .inputBox input[type = "submit"] {
+		width: 100px;
+		background: black;
+		color: white;
+		border: none;
+		cursor: pointer;
+		padding: 10px;
+		font-size: 20px;
+		font-family: 'Raleway', sans-serif;
+		margin-left: 190px;
+	}
+	.contact .contactme form a {
+		position: absolute;
+		color: black;
+		margin-left: 350px;
+		margin-top: 15px;
+		background-color: black;
+		color:white;
+		font-family: 'Raleway', sans-serif;
+	}
+	.contact .contactme form #mailito{
+		margin-top: 40px;
+		margin-left: 303px;
+		position: absolute;
+	}
+}
